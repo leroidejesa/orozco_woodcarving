@@ -1,0 +1,8 @@
+.navbar {
+  background-image: url('img/wood-nav.jpg');
+  background-repeat: repeat-x;
+}
+
+body {
+  padding: 70px;
+}
