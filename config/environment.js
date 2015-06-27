@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'woodframes',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://woodframes.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -16,8 +18,18 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
-  };
+    },
+      contentSecurityPolicy: {
+        'default-src': "'none'",
+        'script-src': "* 'unsafe-inline' 'unsafe-eval'",
+        'font-src': "*",
+        'connect-src': "*",
+        'connect-src': "*",
+        'img-src': "*",
+        'style-src': "* 'unsafe-inline'",
+        'frame-src': "*"
+      }
+    };
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
