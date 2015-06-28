@@ -1,8 +1,138 @@
+.navbar-right {
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.about-title {
+  color: #000000;
+  font-size: 1.5em;
+  font-family: 'Asul', sans-serif;
+}
+
+#order-now {
+  color: #E6EBF0;
+}
+
+.order-btn {
+    /*border: black 1px;*/
+    border: 1px solid #FFFFFF;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: none;
+}
+
+.order-btn:hover {
+  color: #E6EBF0;
+  opacity: .7;
+}
+
+
+.carousel-title {
+  color: #E6EBF0;
+  font-family: 'Homemade Apple', cursive;
+  font-size: .8em;
+}
+
+.about-container {
+  padding: 150px;
+}
+
+.test-container {
+  background: url("https://beyondrecognitiondotorg.files.wordpress.com/2011/07/dsc_0071.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: .3;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+  background: rgba(0,0,0,0.4);
+}
+
 .navbar {
-  background-image: url('img/wood-nav.jpg');
-  background-repeat: repeat-x;
+  padding-top: 10px;
+}
+
+.carousel .item {
+    width: 100%;
+    /*max-height: 900px;*/
+    height: 100%;
+}
+.carousel .item img {
+    width: 100%;
+}
+
+.carousel .carousel-control {
+    background: none;
+    border: none;
+    top: 20%;
+}
+
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+#headshot {
+  max-width: 400px;
+  padding: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 90px;
+}
+
+.branding {
+  color: #E6EBF0;
+  font-size: 2em;
+  font-family: 'Asul', serif;
+  /*padding-top: 5px;
+  padding-bottom: 5px;*/
+  padding: 1px;
 }
 
 body {
-  padding: 70px;
+  /*padding: 70px;*/
+}
+
+.all-products img {
+  max-width: 90%;
+  height: 185px;
+  width: 185px;
+  margin: 1em 2% .2em 2%;
+}
+
+.thumbnail {
+  width: 200px;
+}
+
+.clear-btn {
+    /*border: black 1px;*/
+    border: 1px solid #FFFFFF;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: none;
+}
+
+.clear-btn:hover {
+  color: #FFFFFF;
+  opacity: .7;
+}
+
+a.btn {
+    /*border: black 1px;*/
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: none;
+}
+
+a.btn:hover {
+  color: #FFFFFF;
+  opacity: .7;
 }

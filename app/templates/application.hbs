@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar transparent navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -11,16 +11,19 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li>{{#link-to 'process'}}<span class="branding"><strong>Orozco Woodcarving Co.</strong></span>{{/link-to}}</li>
         <li>{{#link-to 'about'}}About{{/link-to}}</li>
         <li>{{#link-to 'products'}}Products{{/link-to}}</li>
-        <li>{{#link-to 'process'}}The Process{{/link-to}}</li>
-
-
+        <li>{{#link-to ''}}Orders{{/link-to}}</li>
+        <li>{{#link-to ''}}Wood Options{{/link-to}}</li>
+        <li>{{#link-to ''}}Ask Francisco{{/link-to}}</li>
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+            <li><button class="btn order-btn btn-sm"><span id="order-now">Order Now</span></button></li>
+        </ul>
     </div>
   </div>
 </nav>
 
-<div class="container-fluid">
+
   {{outlet}}
-</div>
