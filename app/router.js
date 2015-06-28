@@ -9,8 +9,8 @@ Router.map(function() {
   this.resource('about');
   this.resource('orders');
   this.resource('wood-options');
-  this.resource('ask');
-  this.resource('quote');
+  this.resource('faq');
+  this.resource('getquote');
   this.resource('process', {path: '/'});
 });
 

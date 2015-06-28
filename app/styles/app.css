@@ -1,3 +1,70 @@
+.bg {
+  background: url('http://www.photosinbox.com/download/wood-background.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 100%; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.jumbotron {
+  /*margin-bottom: 0px;*/
+  padding: 100px;
+  padding-top: 100px;
+  height: 300%;
+  color: #E6EBF0;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  background: rgba(0, 0, 0, 0.1);
+  float: none;
+  /*background:transparent;*/
+}
+
+.jumbotron img {
+  margin-top: -125px;
+  padding-left: 15px;
+  max-width: 600px;
+  float: right;
+}
+
+#container {
+  height:300px;
+  width:600px;
+  position:relative;
+}
+
+#image {
+  position:absolute;
+  left: 0;
+  top:0;
+}
+
+#text {
+  z-index:100;
+  position:absolute;
+  color:white;
+  font-size:20px;
+  left:70px;
+  top:50px;
+}
+
+.form-container {
+  /*margin-left: 200px;
+  margin-right: 200px;*/
+  margin-top: -137px;
+}
+
+.select button {width:100%; text-align:left; color:grey;}
+.select .caret {position:absolute; right:10px; margin-top:10px;}
+.select:last-child>.btn {border-top-left-radius:5px; border-bottom-left-radius:5px;}
+.selected {padding-right:10px;}
+.option {width:100%;}
+
+.dropdown-menu {
+  text-shadow: black 0em 0em 0em;
+
+}
+
 .navbar-right {
   padding-right: 20px;
   padding-top: 10px;
@@ -37,16 +104,13 @@
 }
 
 .about-container {
-  padding: 150px;
+  padding: 130px;
 }
 
-.test-container {
-  background: url("https://beyondrecognitiondotorg.files.wordpress.com/2011/07/dsc_0071.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: .3;
+.object-fit {
+  width: 100%;
+  height: auto;
+  opacity: .7;
 }
 
 .navbar.transparent.navbar-inverse .navbar-inner {

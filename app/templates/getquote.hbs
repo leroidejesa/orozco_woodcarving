@@ -1,0 +1,64 @@
+<div class="bg">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Get a quote.</h1>
+        <p>Every frame is a unique, individualized piece of art.</p>
+        <hr>
+        <br>
+      </div>
+
+      <div class="col-md-6">
+        <div id="container">
+          <img src="http://www.clker.com/cliparts/G/M/7/b/N/0/feminie-price-tag.svg">
+          <p id="text">
+            Entry-level Range: $50-$150<br>
+            Mid-range Range: $150-$300<br>
+            High-end Range: $300-$500<br>
+            Specialty Range: $500+<br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              {{input value=email-address id="question-title" placeholder="YOURNAME@EMAIL.COM" class="form-control"}}
+            </div>
+
+            <div class="input-group-btn select" id="select1">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="selected">Select Size Range:</span> <span class="caret"></span></button>
+          <ul class="dropdown-menu option" role="menu">
+          <li id="1"><a href="#">Entry: 4x6, 5x7</a></li>
+          <li id="2"><a href="#">Mid: 8x10, 11x14</a></li>
+          <li id="3"><a href="#">High: 16x20</a></li>
+          <li id="4"><a href="#">Specialty: 24x36</a></li>
+          <li id="5"><a href="#">Other</a></li>
+          </ul>
+      </div>
+      <div class="input-group-btn select" id="select1">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="selected">Select Quantity:</span> <span class="caret"></span></button>
+          <ul class="dropdown-menu option" role="menu">
+          <li id="1"><a href="#">1</a></li>
+          <li id="2"><a href="#">2</a></li>
+          <li id="3"><a href="#">3+</a></li>
+          </ul>
+      </div>
+
+            <div class="form-group">
+              {{textarea value=description id="description" placeholder="Please list any details/specifications." class="form-control" rows="8"}}
+            </div>
+            <button class="btn clear-btn" {{action 'save'}}>Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+4x6 5x7
+8x10 11x14
+16x20
