@@ -7,7 +7,10 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('about');
-  this.resource('products');
+  this.resource('orders');
+  this.resource('wood-options');
+  this.resource('ask');
+  this.resource('quote');
   this.resource('process', {path: '/'});
 });
 

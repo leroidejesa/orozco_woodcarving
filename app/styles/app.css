@@ -13,6 +13,10 @@
   color: #E6EBF0;
 }
 
+#order-now:hover {
+  color: #FFFFFF;
+}
+
 .order-btn {
     /*border: black 1px;*/
     border: 1px solid #FFFFFF;
@@ -28,9 +32,8 @@
 
 
 .carousel-title {
-  color: #E6EBF0;
-  font-family: 'Homemade Apple', cursive;
-  font-size: .8em;
+  color: #FFFFFF;
+  font-size: 1em;
 }
 
 .about-container {
@@ -83,7 +86,7 @@
 
 .carousel-caption {
   position: absolute;
-  top: 90px;
+  top: 200px;
 }
 
 .branding {

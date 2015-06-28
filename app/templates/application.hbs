@@ -13,13 +13,15 @@
       <ul class="nav navbar-nav">
         <li>{{#link-to 'process'}}<span class="branding"><strong>Orozco Woodcarving Co.</strong></span>{{/link-to}}</li>
         <li>{{#link-to 'about'}}About{{/link-to}}</li>
-        <li>{{#link-to 'products'}}Products{{/link-to}}</li>
-        <li>{{#link-to ''}}Orders{{/link-to}}</li>
-        <li>{{#link-to ''}}Wood Options{{/link-to}}</li>
-        <li>{{#link-to ''}}Ask Francisco{{/link-to}}</li>
+        <li>{{#link-to 'orders'}}Orders{{/link-to}}</li>
+        <li>{{#link-to 'wood-options'}}Wood Options{{/link-to}}</li>
+        <li>{{#link-to 'ask'}}Ask Francisco{{/link-to}}</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-            <li><button class="btn order-btn btn-sm"><span id="order-now">Order Now</span></button></li>
+            <!-- <li><button class="btn order-btn btn-sm"><span id="order-now">Get Quote</span></button></li> -->
+          <div class="control-group">
+            <li>{{#link-to 'quote' class="btn order-btn btn-sm"}}<span id="order-now">Get Quote</span>{{/link-to}}</li>
+          </div>
         </ul>
     </div>
   </div>
