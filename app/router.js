@@ -11,6 +11,7 @@ Router.map(function() {
   this.resource('wood-options');
   this.resource('faq');
   this.resource('getquote');
+  this.resource('success');
   this.resource('process', {path: '/'});
 });
 

@@ -54,11 +54,30 @@
   margin-top: -137px;
 }
 
-.select button {width:100%; text-align:left; color:grey;}
-.select .caret {position:absolute; right:10px; margin-top:10px;}
-.select:last-child>.btn {border-top-left-radius:5px; border-bottom-left-radius:5px;}
-.selected {padding-right:10px;}
-.option {width:100%;}
+.select button {
+  width:100%;
+  text-align:left;
+  color:grey;
+}
+
+.select .caret {
+  position:absolute;
+  right:10px;
+  margin-top:10px;
+}
+
+.select:last-child > .btn {
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+}
+
+.selected {
+  padding-right:10px;
+}
+
+.option {
+  width:100%;
+}
 
 .dropdown-menu {
   text-shadow: black 0em 0em 0em;
