@@ -1,3 +1,5 @@
+{{#if showingAll}}
+
 <nav class="navbar transparent navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -19,12 +21,27 @@
       <ul class="nav navbar-nav navbar-right">
             <!-- <li><button class="btn order-btn btn-sm"><span id="order-now">Get Quote</span></button></li> -->
           <div class="control-group">
-            <li>{{#link-to 'getquote' class="btn order-btn btn-sm"}}<span id="order-now">Contact Us</span>{{/link-to}}</li>
+            <li>{{#link-to 'contact' class="btn order-btn btn-sm"}}<span id="order-now">Contact Us</span>{{/link-to}}</li>
           </div>
         </ul>
     </div>
   </div>
 </nav>
 
+{{outlet}}
 
-  {{outlet}}
+{{else}}
+
+
+
+<div class="bg-splash">
+  <div class="splash-box">
+
+      <h1><span class="splash-branding">Orozco Woodcarving Co.</span></h1>
+      <h2>Inspiration. &nbsp;&nbsp; Tradition. &nbsp;&nbsp; Heritage.</h2>
+      <div id="splash-btn"><button class="btn order-btn btn-xl" {{action 'switch'}}>continue</button></div>
+
+  </div>
+</div>
+
+{{/if}}

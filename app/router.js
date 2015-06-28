@@ -12,6 +12,7 @@ Router.map(function() {
   this.resource('faq');
   this.resource('getquote');
   this.resource('success');
+  this.resource('contact');
   this.resource('process', {path: '/'});
 });
 
