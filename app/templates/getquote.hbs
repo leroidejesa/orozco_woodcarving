@@ -28,28 +28,30 @@
             <div class="form-group">
               {{input value=email-address id="question-title" placeholder="YOURNAME@EMAIL.COM" class="form-control"}}
             </div>
+            <hr>
 
-            <div class="input-group-btn select" id="select1">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="selected">Select Size Range:</span> <span class="caret"></span></button>
-          <ul class="dropdown-menu option" role="menu">
-          <li id="1"><a href="#">Entry: 4x6, 5x7</a></li>
-          <li id="2"><a href="#">Mid: 8x10, 11x14</a></li>
-          <li id="3"><a href="#">High: 16x20</a></li>
-          <li id="4"><a href="#">Specialty: 24x36</a></li>
-          <li id="5"><a href="#">Other</a></li>
-          </ul>
-      </div>
-      <div class="input-group-btn select" id="select1">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="selected">Select Quantity:</span> <span class="caret"></span></button>
-          <ul class="dropdown-menu option" role="menu">
-          <li id="1"><a href="#">1</a></li>
-          <li id="2"><a href="#">2</a></li>
-          <li id="3"><a href="#">3+</a></li>
-          </ul>
-      </div>
+            <select class="form-control" id="dropdown-quantity" placeholder="test">
+              <option value="one">Select Size Range:</option>
+              <option value="two">Entry: 4x6, 5x7</option>
+              <option value="three">Mid: 8x10, 11x14</option>
+              <option value="four">High: 16x20</option>
+              <option value="five">Specialty: 24x36</option>
+              <option value="six">Other</option>
+            </select>
+            <br>
+
+           <select class="form-control" id="dropdown-quantity" placeholder="test">
+             <option value="one">Quantity</option>
+             <option value="two">1</option>
+             <option value="three">2</option>
+             <option value="four">3</option>
+             <option value="five">4</option>
+             <option value="six">5+</option>
+           </select>
+           <br>
 
             <div class="form-group">
-              {{textarea value=description id="description" placeholder="Please list any details/specifications." class="form-control" rows="8"}}
+              {{textarea value=description id="description" placeholder="Please list any details/specifications." class="form-control" rows="5"}}
             </div>
             {{#link-to 'success' class="btn clear-btn"}}Submit{{/link-to}}
           </form>
